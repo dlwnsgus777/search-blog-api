@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    import:
+      - optional:classpath:conf/database.yml      # 데이터베이스 설정 관련
+      - optional:classpath:conf/logging.yml       # 로그 출력 관련
+      - optional:classpath:conf/springdoc.yml     # 문서 설정 관련
+      - optional:classpath:conf/springdoc.yml     # 문서 설정 관련
+      - optional:classpath:conf/api-call.yml      # api 호출 설정 관련
+
